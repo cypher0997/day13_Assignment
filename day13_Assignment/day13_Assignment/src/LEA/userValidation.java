@@ -5,11 +5,14 @@ import java.util.regex.Pattern;
 
 
 public class userValidation {
-
+        
+        /*below are the given patterns for variable user input matching*/
         final String namePattern = "^[A-Z]{1}[a-z]{2,10}$";
         final String emailpattern = "^[a-z0-9]{3,}(.[0-9a-z]+)*@[a-z]{2,}.(com|edu)(co.in)*$";
         final String mobileNumberPattern = "^\\+[0-9]+\\s[0-9]{10,15}$";
         final String passwordPattern = "^(?=.*[0-9])"+"(?=.*[@#$%^&+=])"+"(?=.*[a-z])(?=.*[A-Z])"+"(?=\\S+$).{8,20}$";
+        
+        /* below is the method to validate user*/ 
     public void userValidate() {
 
         validate UR = (checkPattern , givenInput) ->{
